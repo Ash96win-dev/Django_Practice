@@ -16,5 +16,6 @@ def detail(request, album_id):
     template = loader.get_template('music/albumid.html')
     context = {
         'all_albums': album_id,
+
     }
     return HttpResponse(template.render(context, request))
